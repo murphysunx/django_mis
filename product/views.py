@@ -92,7 +92,6 @@ class ProductCategoryViewSet(viewsets.ModelViewSet):
     #     menu_categories = ProductCategory.objects.filter(parent_id=None)
 
 
-
 class BrandViewSet(viewsets.ModelViewSet):
     serializer_class = BrandSerializer
     queryset = Brand.objects.all()
