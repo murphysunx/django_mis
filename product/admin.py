@@ -1,7 +1,7 @@
 from django.urls import reverse
 from django.contrib import admin
 from django.utils.html import format_html
-from .models import ProductCategory, Product, ProductSpecs, AttrKey, AttrValue
+from .models import *
 
 
 def linkify(field_name):
@@ -41,3 +41,4 @@ admin.site.register(Product)
 admin.site.register(ProductSpecs)
 admin.site.register(AttrKey)
 admin.site.register(AttrValue)
+admin.site.register(ProductSpecsToAttrVal)

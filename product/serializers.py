@@ -25,8 +25,6 @@ class ProductCategorySerializer(serializers.ModelSerializer):
 
 
 class BrandSerializer(serializers.ModelSerializer):
-    # products = serializers.PrimaryKeyRelatedField(many=True, queryset=Product.objects.all())
-
     class Meta:
         model = Brand
         fields = ['bnd_id', 'bnd_name']
