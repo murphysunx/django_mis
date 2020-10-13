@@ -107,7 +107,7 @@ from . import views
 
 router = DefaultRouter()
 router.register(r'category', views.ProductCategoryViewSet)
-
+router.register(r'spu', views.ProductViewSet)
 urlpatterns = router.urls
 
 # urlpatterns = format_suffix_patterns(urlpatterns)
